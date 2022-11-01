@@ -1,0 +1,86 @@
+/*************** HOME **********************/
+
+.background-image-divider{
+    background-image: url(/assets/images/home/home2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+ }
+ 
+ section#home{
+    color: white; 
+    background-color: rgba(24, 24, 24, 0.5);
+    height: 100vh;
+    z-index: 6;
+ }
+ .home-user-infos{
+    display: flex;
+    flex-direction: column;
+    width: 495px;
+ }
+ .home-username{
+    font-size: 3rem;
+ }
+ .home-job{
+    font-size: 1.2rem;
+ }
+ .home-user-details{
+    font-size: 0.9rem;
+ }
+ .home-user-detail{
+    padding: 5px;
+ }
+span.title{
+    border-bottom: 2px solid var(--main-color-theme);
+}
+ .home-user-details span:nth-child(2){
+    padding-left: 40px;
+}
+
+/*** ANIMATION FONDU TEXTE ***/
+.home-job-1{
+   animation: fondu_texte 10s ease-in-out 5s infinite normal backwards;
+}
+.home-job-2{
+    top: 0;
+    left: 40%;
+    animation: fondu_texte 10s ease-in-out 0s infinite normal backwards;
+}
+    
+@keyframes fondu_texte {
+   0%{opacity: 0;}
+   30%{opacity: 0;}
+   35%{opacity: 1;}
+   65%{opacity: 1;}
+   70%{opacity: 0;}
+   100%{opacity: 0;}
+} 
+
+/*************** ROTATION **********************/
+
+
+
+/********* VUE TABLETTE ***************/
+
+@media screen and (max-width: 900px){
+    
+    .home-user-details{
+       width: 300px;
+       margin: 0 auto;
+       padding-left: 140px;
+    }
+}
+
+/********* VUE MOBILE ***************/
+
+@media screen and (max-width: 528px){
+
+   .home-username{
+        font-size: 2rem;
+    } 
+}
+

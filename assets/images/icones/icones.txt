@@ -1,0 +1,32 @@
+ <div class="icones" style="font-size: 2.5rem;">
+        <i class="fa-brands fa-google-plus-g"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="bi bi-gear-fill"></i>
+        <i class="fa-solid fa-user-tie"></i>
+        <i class="fa-duotone fa-user-tie-hair-long"></i>
+        <i class="bi bi-pc-display-horizontal"></i>
+        <i class="bi bi-file-text"></i>
+        <i class="bi bi-shop"></i>
+        <i class="bi bi-kanban"></i>
+        <i class="fa-solid fa-blog"></i>
+        <i class="fa-brands fa-pied-piper-pp"></i>
+        <i class="fa-brands fa-pied-piper-alt"></i>
+        <i class="fa-brands fa-drupal"></i>
+        <i class="bi bi-emoji-smile"></i>
+        <i class="bi bi-alarm"></i>
+        <i class="fa-solid fa-award"></i>
+        <i class="bi bi-cup-hot"></i>
+        <i class="bi bi-person-fill"></i>
+        <i class="bi bi-envelope-fill"></i>
+        <i class="bi bi-chat-fill"></i>
+        <i class="bi bi-geo-alt"></i>
+        <i class="bi bi-envelope"></i>
+        <i class="bi bi-telephone"></i>
+        <i class="bi bi-check-circle"></i>
+        <i class="bi bi-list"></i>
+
+
+
+
+    </div>

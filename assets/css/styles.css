@@ -1,0 +1,153 @@
+/********    STRUCTURE GENERALE ***************/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-home{
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aside-left content";
+}
+#header-top{
+   grid-area: header-top;
+   background-color: var(--main-color-white);
+   display: none;
+}
+#aside-left{
+    grid-area: aside-left;
+    background-color: var(--main-color-argile);
+}
+.content{
+   grid-area: content; 
+}
+
+/***************** ASIDE-LEFT ***************/
+.aside-left-content{
+    background-color: var(--main-color-white);
+    margin-right: 15px;
+    height: 100%;
+}
+.user-picture{
+   padding: 20px 0 10px 0;
+}
+.user-picture img{
+   width: 150px;
+   height: 150px;
+   border-radius: 100px;
+   border: 2px solid var(--main-color-pinchard);
+}
+.username{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.job{
+    color: var(--main-color-gray);
+    padding-bottom: 30px;
+}
+ul.menu-lists{
+    padding: 0 0 10px 0;
+}
+ul.menu-lists li{
+    padding: 13px 0;
+    font-size: 1rem;
+    font-weight: bold;
+} 
+ul.menu-lists li:nth-child(1){
+    border: 1px solid var(--main-color-pinchard);
+    border-right: 3px solid transparent;
+}   
+ul.menu-lists li:nth-child(2),
+ul.menu-lists li:nth-child(3),
+ul.menu-lists li:nth-child(4),
+ul.menu-lists li:nth-child(5){
+    border-bottom: 1px solid var(--main-color-pinchard);
+    border-right: 3px solid transparent;
+}    
+ul.menu-lists li:hover{
+    cursor: pointer;
+} 
+.social-icons{
+  padding-top: 40px;
+}   
+.social-icons i{
+    color: var(--main-color-gray);
+    font-size: 1.2rem;
+    background-color: var(--main-color-argile);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.6;
+ }
+
+
+ /***************** CONTENT ***************/
+ .content-icon-settings i{
+    font-size: 1.2rem;
+    right: 0;
+    top: 90px;
+    background-color: var(--main-color-white);
+    color: var(--main-color-theme);
+    padding: 5px 13px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--main-color-pinchard);
+    z-index: 10;
+ }
+
+/************** SECTIONS  ****************/
+#resume, #portfolio, #contact, #about-me{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+#about-me{
+    z-index: 4;
+    background-color: brown;
+}
+#resume{
+    z-index: 3;
+    background-color: orange;
+}
+#portfolio{
+    z-index: 2;
+    background-color: green;
+}
+#contact{
+    z-index: 1;
+    background-color: yellow;
+}
+
+
+/********* VUE TABLETTE & MOBILE ***************/
+
+@media screen and (max-width: 900px) {
+    .container-home{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 3fr;
+        grid-template-areas: "header-top" "content";
+    }
+    #header-top{
+        display: flex;
+    }
+    #aside-left{
+        display: none;
+    }
+    .header-username{
+        font-size: 1.2rem;
+        color: var(--main-color-gray);
+        padding-left: 10px;
+    }
+    .header-icon-burger i{
+        font-size: 1.5rem;
+        color: var(--main-color-black);
+        padding-right: 10px;
+    }
+    
+}
+
+
+
